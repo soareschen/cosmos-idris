@@ -1,7 +1,7 @@
 module Tendermint.Key
 
 export
-interface IsKey (0 Key : Type) where
+interface KeyImpl (0 mod: Type) where
   PublicKey : Type
   PrivateKey : PublicKey -> Type
 
